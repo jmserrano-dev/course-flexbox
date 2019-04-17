@@ -1,0 +1,35 @@
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 500px;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: lightgray;   
+    text-align: center;
+}
+
+.content {
+    width: 70%;
+    min-height: 500px;
+    float: left;
+    border: 1px solid gray;
+    background-color: white;
+}
+
+.sidebar {
+    width: 25%;
+    min-height: 500px;
+    float: right;
+    margin-left: 20px;
+    background-color: darkgray;
+}
+
+.clearfix {
+    clear: both;
+}

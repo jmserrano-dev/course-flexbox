@@ -1,0 +1,95 @@
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    font-family: sans-serif;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    padding: 10px;
+    background-color: lightgray;
+}
+
+header {
+    flex: 1 1 100%;
+    padding: 10px;
+    background-color: white;
+    text-align: center;
+}
+
+article {
+    width: 70%;
+    flex: 1 1 70%;
+    padding: 20px;
+    background-color: aqua;
+}
+
+@media (max-width: 500px) {
+    article {
+        flex-basis: 100%;
+    }
+}
+
+aside {
+    width: 30%;
+    flex: 1 1 30%;
+    padding: 20px;
+    background-color: darkblue;
+}
+
+aside ul {
+    margin: 10px;
+    padding: 0;
+    color: white;
+    cursor: pointer;
+}
+
+/* body {
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;    
+    border: 20px solid white;
+}
+
+div[class*="item-"] {
+    flex-grow: 1;
+    flex-basis: 500px;
+    padding: 10px;
+    background: orange;
+    text-align: center;
+    border: 2px solid gray;
+}
+
+div[class*="item-"]:nth-child(odd) {
+    color: white;
+    background-color: black;
+}
+
+div[class*="item-"]:nth-child(5) {
+    flex-grow: 4;
+    background-color: aqua;
+} */

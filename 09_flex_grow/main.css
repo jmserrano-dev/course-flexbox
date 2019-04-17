@@ -1,0 +1,47 @@
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    border: 20px solid white;
+}
+
+div[class*="item-"] {
+    flex: 1; /* flex-grow */
+    padding: 10px;
+    background: orange;
+    text-align: center;
+    border: 2px solid gray;
+}
+
+div[class*="item-"]:nth-child(odd) {
+    color: white;
+    background-color: black;
+}
+
+div[class*="item-"]:nth-child(6) {
+    flex: 2; /* flex-grow */
+    color: aqua;
+    background-color: blue;
+}
